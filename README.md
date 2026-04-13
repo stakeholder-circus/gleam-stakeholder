@@ -1,45 +1,31 @@
 > [!IMPORTANT]
 > This repository is part of a Codex-assisted rewrite experiment. All changes are manually reviewed, a human remains in the loop, and missing behavior is tracked explicitly rather than hidden. The project exists for fun, research, language learning, AI agent workflow/planning, interop experiments, and code review testing.
-# rust-stakeholder
+# gleam-stakeholder
 
-Satirical CLI output generator, now serving as the 2026+ source baseline for the multi-language `stakeholder` rewrite program.
+Gleam scaffold under `stakeholder-circus`.
 
 ## Status
-- Rust is the source-of-truth implementation.
-- The runtime is now scheduler-driven and deterministic under seed.
-- The baseline includes modern generator families for agents, AI operations, blockchain, healthcare, EV charging, protocol ecosystems, multilingual security flavor packs, and quantum-themed infrastructure work.
-- Experimental live-provider concepts exist in the design, but deterministic parity behavior remains the default path.
+- Scaffold-only repository.
+- Imported Rust history is preserved for attribution and auditability.
+- Governance, provenance, hook, and CI baselines are in place.
+- No parity-depth claims are made until this repo is explicitly promoted from the scaffold queue.
 
-## Command contract
-- `cargo fmt`
-- `cargo clippy -- -D warnings`
-- `cargo build`
-- `cargo test`
-- `docker build -t rust-stakeholder .`
-- `docker run --rm rust-stakeholder --list-values`
+## Role
+- Typed BEAM scaffold.
+- Purpose: Typed BEAM parity lane with OTP-first execution and a later optional JavaScript compilation target.
+- Program category: interop, research
 
-## Example usage
-```bash
-cargo run -- --dev-type security --jargon high --complexity extreme --alerts --seed 42
-cargo run -- --dev-type blockchain --framework "rollup-mcp-gateway" --output-format json --seed 7
-cargo run -- --project "hospital-ocpp-quantum-control" --jargon extreme --team --trace --seed 11
-```
+## Planned toolchain contract
+- `gleam format --check`
+- `gleam test`
 
-## What changed in the 2026+ baseline
-- classic families were modernized instead of left as legacy parody strings
-- activity planning now uses typed family selection instead of a fixed loop
-- keyword routing brings in healthcare, charging, protocol, and quantum families where relevant
-- security runs can layer multilingual language packs and persona overlays
-- JSON output is deterministic and snapshot-friendly when a seed is supplied
+## Current guardrail
+- This repo is intentionally limited to scaffold readiness. Real implementation depth begins only after promotion from the wider matrix queue.
 
-## Docs
-- [Tooling](docs/tooling.md)
-- [Docker](docs/docker.md)
-- [Edge cases](docs/edge-cases.md)
-- [Language specialties](docs/language-specialties.md)
-- [Example outputs](docs/example-outputs.md)
-- [Experimental](docs/experimental.md)
-- [Traceability](docs/traceability/README.md)
-
-## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md). Use Conventional Commits and keep Rust behavior traceable because downstream repos depend on this baseline.
+## Documentation
+- [AI disclosure](AI_DISCLOSURE.md)
+- [Parity](PARITY.md)
+- [Explicit gaps](GAPS.md)
+- [Remotes](docs/remotes.md)
+- [Provenance](docs/provenance.md)
+- [Toolchain](docs/toolchain.md)
