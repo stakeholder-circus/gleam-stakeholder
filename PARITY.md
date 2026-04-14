@@ -2,11 +2,11 @@
 
 ## Role
 
-Typed BEAM scaffold.
+Typed BEAM full-parity lane.
 
 ## Parity class
 
-- scaffold-target
+- full-parity-target
 
 ## Method and Review Model
 
@@ -16,8 +16,9 @@ Typed BEAM scaffold.
 - Derived from giacomo-b/rust-stakeholder where applicable
 - Missing behavior must fail fast and be recorded explicitly in GAPS.md
 
-## Promotion prerequisites
+## Current tranche
 
-- Land deterministic OTP pipeline behavior, fixture parity, and a stable CLI surface before any JS-target experiments.
-- Preserve deterministic normalized JSON and the shared CLI contract from stakeholder-core.
-- Keep provenance and attribution explicit as implementation depth is added.
+- Classic-six dedicated families are implemented locally.
+- Modern-core dedicated families are implemented locally.
+- Later packet families remain grouped fallback only.
+- Live-provider runtime is intentionally deferred and tracked as an explicit program gap.

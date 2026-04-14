@@ -1,14 +1,20 @@
 # Toolchain contract
 
-This repository is currently scaffold-only.
+This repository is currently a publication-held wider-matrix local tranche.
 
 ## Planned commands after promotion
-- `gleam format --check`
+- `gleam deps download`
+- `gleam format --check src test`
 - `gleam test`
+- `gleam run -- --list-values`
 
-## Scaffold-time checks
+## Stability checks
 - `python3 scripts/validate_scaffold.py`
-- `nix run .#check` once Nix is available locally
+- `nix run .#check`
 
 ## Current limitation
-- `flake.lock` has not been generated locally because `nix` is not installed in the current environment.
+- Docker remains the portable release gate for runtime promotion, and the live-provider lane is still deferred.
+
+## Validation notes
+- Docker is the portable release gate for runtime promotion.
+- The current docs/CI surface stays focused on publication-held stability until the repo gains runnable depth.
