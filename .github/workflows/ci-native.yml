@@ -1,4 +1,4 @@
-name: ci
+name: ci-native
 
 on:
   push:

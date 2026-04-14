@@ -1,5 +1,5 @@
 {
-  description = "stakeholder-circus gleam-stakeholder scaffold";
+  description = "stakeholder-circus gleam-stakeholder";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
@@ -12,7 +12,7 @@
         let pkgs = import nixpkgs { inherit system; };
         in {
           default = pkgs.mkShell {
-            packages = with pkgs; [ git jq python312 ];
+            packages = with pkgs; [ erlang gleam rebar3 git jq python312 ];
           };
         });
       apps = forAllSystems (system:
@@ -22,10 +22,10 @@
               program = "${pkgs.writeShellScript name text}";
             };
         in {
-          build = mk "build" ''python3 scripts/validate_scaffold.py'';
-          test = mk "test" ''python3 scripts/validate_scaffold.py'';
-          check = mk "check" ''python3 scripts/validate_scaffold.py'';
-          format = mk "format" ''python3 scripts/validate_scaffold.py'';
+          build = mk "build" ''gleam deps download && gleam test && gleam run -- --list-values'';
+          test = mk "test" ''gleam deps download && gleam test'';
+          check = mk "check" ''python3 scripts/validate_scaffold.py && gleam deps download && gleam format --check src test && gleam test && gleam run -- --list-values'';
+          format = mk "format" ''gleam format src test'';
         });
     };
 }
