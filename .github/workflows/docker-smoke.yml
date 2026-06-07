@@ -11,7 +11,7 @@ jobs:
   docker-smoke:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: docker build -t gleam-stakeholder .
       - run: docker run --rm gleam-stakeholder --list-values
       - run: docker run --rm gleam-stakeholder --focus-family code_analyzer --output-format json --seed docker-code
