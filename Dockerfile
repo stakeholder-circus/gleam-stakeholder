@@ -1,4 +1,4 @@
-FROM erlang:27-alpine
+FROM erlang:29-alpine
 ARG TARGETARCH
 WORKDIR /app
 RUN apk add --no-cache bash curl tar gzip rebar3
